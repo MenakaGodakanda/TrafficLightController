@@ -81,7 +81,7 @@ The Makefile automates the build process.
 - To build the project, run:<br>
 `make`
 
-##### Running the Project
+#### Running the Project
 - To run the project, execute the built executable:<br>
 `./TrafficLightController`
 
