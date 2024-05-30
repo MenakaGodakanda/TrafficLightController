@@ -1,7 +1,8 @@
 # Traffic Light Controller
 
 ## Overview
-This project simulates a traffic light controller using a real-time operating system (RTOS) approach in a POSIX environment. It demonstrates the use of threads, state machines, and basic embedded system concepts using C programming.
+This project simulates a traffic light controller using a real-time operating system (RTOS) approach in a POSIX environment. It demonstrates the use of threads, state machines, and basic embedded system concepts using C programming. <br>
+<a href="https://github.com/MenakaGodakanda/TrafficLightController/blob/main/Project_Description.md">Project Description</a>
 
 ## Features
 - Real-time Operating System (RTOS) Simulation: It's not a true RTOS, the project utilizes POSIX threads to simulate real-time behavior. Each thread represents a component of the traffic light system.
