@@ -37,10 +37,15 @@ This project simulates a traffic light controller using a real-time operating sy
     ```sh
     make
     ```
+    ![1](https://github.com/MenakaGodakanda/TrafficLightController/assets/156875412/45393b81-4ef3-43a1-9a7b-2a57270c42d8)
+
 3. Run the project:
     ```sh
     ./TrafficLightController
     ```
+    ![2](https://github.com/MenakaGodakanda/TrafficLightController/assets/156875412/b07e9ebb-880c-44aa-8fdb-4f6dd3cbc35d)
+
+
 
 ## License
 This project is licensed under the MIT License.
