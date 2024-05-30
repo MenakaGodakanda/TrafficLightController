@@ -36,3 +36,58 @@ In this diagram:
 - The "Traffic Light Controller Thread" interacts with the "Traffic Light Controller" to manage state changes and traffic light behavior.
 - The "Traffic Light Controller" contains the logic for the traffic light behavior and state transitions.
 - The "Traffic Light State Machine" represents the states and transitions of the traffic light system.
+
+## Project Structure:
+<img width="194" alt="Screenshot 2024-05-30 at 5 23 47 PM" src="https://github.com/MenakaGodakanda/TrafficLightController/assets/156875412/9c427dd1-1995-461a-8fda-88e8ffd22655">
+
+
+
+## Coding Details:
+
+### Header File (traffic_light.h)
+The header file contains the declarations for the traffic light controller functions and the LightState enumeration.
+- Enumeration (LightState): Defines the possible states of the traffic light (RED, GREEN, YELLOW).
+- Function Declarations: Declares functions for initializing the traffic light, changing its state, and getting the current state.
+
+### Traffic Light Controller Implementation (traffic_light.c)
+The implementation file contains the definitions of the functions declared in the header file.
+- Static Variable (currentState): Holds the current state of the traffic light.
+- initializeTrafficLight Function: Sets the initial state of the traffic light to RED.
+- changeLightState Function: Transitions the traffic light to the next state in the sequence.
+- getCurrentLightState Function: Returns the current state of the traffic light.
+
+### Main Program (main.c)
+The main program uses POSIX threads to simulate the operation of the traffic light controller.
+- trafficLightController Function: This function is executed in a separate thread. It initializes the traffic light and continuously changes its state, printing the current state every second.
+- main Function:
+  - Creates a new thread to run the trafficLightController function.
+  - Joins the thread (waits for it to finish, which it never will in this infinite loop).
+ 
+### Build and Run the Project (Makefile)
+The Makefile automates the build process.
+- Variables:
+  - CC: The compiler to use (gcc).
+  - CFLAGS: Compiler flags, including the include directory and pthread flag.
+  - DEPS: Header file dependencies.
+  - OBJ: Object files to be created.
+
+- Rules:
+  - %.o: %.c $(DEPS): Compiles .c files into .o files.
+  - TrafficLightController: Links the object files into the final executable.
+  - .PHONY: clean: Declares the clean target as phony (not a real file).
+  - clean: Removes object files and the executable.
+
+#### Building the Project
+- To build the project, run:<br>
+`make`
+
+##### Running the Project
+- To run the project, execute the built executable:<br>
+`./TrafficLightController`
+
+
+
+
+
+
+
