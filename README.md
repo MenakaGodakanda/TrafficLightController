@@ -8,7 +8,7 @@ This project simulates a traffic light controller using a real-time operating sy
 - Real-time Operating System (RTOS) Simulation.
 - Threaded Architecture.
 - State Machine Implementation.
-- State Machine Implementation.
+- Modular Design.
 - Concurrency Handling.
 - Build Automation with Makefile.
 
